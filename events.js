@@ -207,6 +207,11 @@ function changeBelt(belt) {
     setPreferredBelt(belt.name)
     display()
 }
+// Triggered when the allbelt checkbox is toggled.
+function changeAllBelt(event) {
+    setAllBelt(event.target.checked)
+    display()
+}
 
 // Triggered when the minimum pipe length is changed.
 function changePipeLength(event) {
